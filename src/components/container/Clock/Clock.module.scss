@@ -1,0 +1,13 @@
+.clock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: min-content;
+  align-self: flex-end;
+  text-align: center;
+}
+
+h3 {
+  margin-bottom: 0;
+}

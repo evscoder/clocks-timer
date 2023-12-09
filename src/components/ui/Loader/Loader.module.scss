@@ -1,0 +1,23 @@
+.loader {
+  --border-width: 4px;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border: var(--border-width) solid cornflowerblue;
+  border-radius: 100%;
+  animation: loadRotate 700ms ease-in infinite;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: var(--border-width) solid #fff;
+    margin: calc(var(--border-width) * -1);
+    border-color: #fff transparent transparent transparent;
+    border-radius: inherit;
+  }
+}
+
+@keyframes loadRotate {
+  from {transform: rotate(0)} to {transform: rotate(360deg)}
+}
